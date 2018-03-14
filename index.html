@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BEST PHOTO GALLERY | フォトギャラリー</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+    </head>
+
+
+
+    <body>
+        <header>
+            <h1>BEST PHOTO GALLERY</h1>
+            <h3>フォトギャラリー</h3>
+            <ul id='nav'>
+                <li><a href="#first">metropolis</a></li>
+                <li><a href="#second">void</a></li>
+                <li><a href="#third">rays</a></li>
+                <li><a href="#fourth">lantern</a></li>
+                <li><a href="#fifth">rooms</a></li>
+                <li><a href="#sixth">callsigns</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+
+
+
+        </header>
+
+            <section class="image-section">
+                <img src="images/metropolis.jpg" alt="" class="gallery-image" id='first'>
+            </section>
+
+            <section class="image-section">
+                <img src="images/void.jpg" alt="" class="gallery-image" id='second'>
+            </section>
+
+            <section class="image-section">
+                <img src="images/rays.jpg" alt="" class="gallery-image" id='third'>
+
+            <section class="image-section">
+                <img src="images/lanterns.jpg" alt="" class="gallery-image" id='fourth'>
+            </section>
+
+            <section class="image-section">
+                <img src="images/rooms.jpg" alt="" class="gallery-image" id='fifth'>
+            </section>
+
+            <section class="image-section">
+                <img src="images/callsigns.jpg" alt="" class="gallery-image" id='sixth'>
+            </section>
+
+
+
+
+
+
+
+            <!-- About section -->
+            <section id='page-section'>
+                <h3>About</h3>
+                <h3>声明</h3>
+
+                <p id='about'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <ul>
+                    <li>fake@email.com</li>
+                    <li>fakebook</li>
+                    <li>instafake</li>
+                </ul>
+            </section>
+
+
+
+    </body>
+
+    <!-- Standard jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- jQuery scrollTo Plugin -->
+    <script type="text/javascript" src="jquery.scrollTo.js"></script>
+
+
+
+
+
+
+
+    <!-- Scripts have been seperated for clarity in development -->
+
+
+    <script type="text/javascript">                                 // Script for scrollTo
+        $(function(){
+            $("#nav a").click(function(e){                          // Fires on anchor click in nav
+                e.preventDefault();                                 // Prevents default action for anchor tag
+                $('html,body').scrollTo(this.hash,this.hash);       // Scrolls to corresponding section by id
+            });
+        });
+    </script>
+
+
+
+
+
+
+</html>
